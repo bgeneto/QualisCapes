@@ -1,0 +1,29 @@
+{
+    "name": "Qualis Capes",
+    "description": "Utiliza o novo critério da Capes para exibir o fator Qualis Periódico diretamente na página Sources do scopus.com",
+    "version": "1.0.0",
+    "manifest_version": 2,
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.scopus.com/sources*"
+          ],
+          "js": ["content.js"]
+        }
+    ],
+    "browser_action": {
+        "default_icon": "img/icon.png",
+        "default_title": "Qualis Capes"
+    },
+    "icons": {
+        "16": "img/icon16.png",
+        "32": "img/icon32.png",
+        "48": "img/icon48.png",
+        "128": "img/icon128.png"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+            "update_url": "https://transfere.me/qualiscapesupdates"
+        }
+    }
+}
